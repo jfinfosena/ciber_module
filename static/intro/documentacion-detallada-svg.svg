@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fondo -->
+  <rect x="0" y="0" width="200" height="200" fill="#f0f0f0"/>
+  
+  <!-- Documento principal -->
+  <path d="M40,20 h100 a20,20 0 0 1 20,20 v120 a20,20 0 0 1 -20,20 h-100 a20,20 0 0 1 -20,-20 v-120 a20,20 0 0 1 20,-20 z" fill="#ffffff" stroke="#34495e" stroke-width="4"/>
+  
+  <!-- Líneas de texto -->
+  <g stroke="#bdc3c7" stroke-width="2">
+    <line x1="60" y1="50" x2="140" y2="50" />
+    <line x1="60" y1="70" x2="140" y2="70" />
+    <line x1="60" y1="90" x2="140" y2="90" />
+    <line x1="60" y1="110" x2="140" y2="110" />
+    <line x1="60" y1="130" x2="140" y2="130" />
+  </g>
+  
+  <!-- Lupa -->
+  <circle cx="130" cy="140" r="30" fill="none" stroke="#3498db" stroke-width="4"/>
+  <line x1="152" y1="162" x2="170" y2="180" stroke="#3498db" stroke-width="6"/>
+  
+  <!-- Marcadores de página -->
+  <rect x="150" y="40" width="20" height="30" fill="#e74c3c" rx="3" ry="3"/>
+  <rect x="150" y="80" width="20" height="30" fill="#f39c12" rx="3" ry="3"/>
+  
+  <!-- Ícono de lista -->
+  <g transform="translate(45,45)">
+    <circle cx="0" cy="0" r="3" fill="#2ecc71"/>
+    <circle cx="0" cy="20" r="3" fill="#2ecc71"/>
+    <circle cx="0" cy="40" r="3" fill="#2ecc71"/>
+    <circle cx="0" cy="60" r="3" fill="#2ecc71"/>
+    <circle cx="0" cy="80" r="3" fill="#2ecc71"/>
+  </g>
+  
+  <!-- Clip -->
+  <path d="M30,10 v25 a10,10 0 0 0 10,10 h10 a10,10 0 0 0 10,-10 v-35" fill="none" stroke="#8e44ad" stroke-width="4"/>
+</svg>

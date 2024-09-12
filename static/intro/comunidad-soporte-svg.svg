@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fondo circular -->
+  <circle cx="100" cy="100" r="98" fill="#f0f0f0"/>
+  
+  <!-- Figuras representando personas -->
+  <circle cx="70" cy="80" r="25" fill="#3498db"/>
+  <path d="M70,105 L70,150 L50,170 M70,150 L90,170" stroke="#3498db" stroke-width="8" fill="none"/>
+  
+  <circle cx="130" cy="80" r="25" fill="#e74c3c"/>
+  <path d="M130,105 L130,150 L110,170 M130,150 L150,170" stroke="#e74c3c" stroke-width="8" fill="none"/>
+  
+  <circle cx="100" cy="50" r="25" fill="#2ecc71"/>
+  <path d="M100,75 L100,120 L80,140 M100,120 L120,140" stroke="#2ecc71" stroke-width="8" fill="none"/>
+  
+  <!-- Burbuja de diálogo central -->
+  <path d="M70,130 Q100,160 130,130 Q150,110 130,90 Q100,60 70,90 Q50,110 70,130 Z" fill="#f39c12"/>
+  <circle cx="85" cy="110" r="5" fill="white"/>
+  <circle cx="100" cy="110" r="5" fill="white"/>
+  <circle cx="115" cy="110" r="5" fill="white"/>
+</svg>

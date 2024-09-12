@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fondo circular -->
+  <circle cx="100" cy="100" r="98" fill="#f0f0f0"/>
+  
+  <!-- Nodos de conectividad -->
+  <circle cx="60" cy="60" r="20" fill="#3498db"/>
+  <circle cx="140" cy="60" r="20" fill="#e74c3c"/>
+  <circle cx="60" cy="140" r="20" fill="#2ecc71"/>
+  <circle cx="140" cy="140" r="20" fill="#f39c12"/>
+  
+  <!-- Líneas de conexión -->
+  <line x1="60" y1="60" x2="140" y2="60" stroke="#34495e" stroke-width="3"/>
+  <line x1="140" y1="60" x2="140" y2="140" stroke="#34495e" stroke-width="3"/>
+  <line x1="140" y1="140" x2="60" y2="140" stroke="#34495e" stroke-width="3"/>
+  <line x1="60" y1="140" x2="60" y2="60" stroke="#34495e" stroke-width="3"/>
+  <line x1="60" y1="60" x2="140" y2="140" stroke="#34495e" stroke-width="3"/>
+  <line x1="60" y1="140" x2="140" y2="60" stroke="#34495e" stroke-width="3"/>
+  
+  <!-- Elemento central de control -->
+  <circle cx="100" cy="100" r="30" fill="#8e44ad"/>
+  <path d="M85,100 L115,100 M100,85 L100,115" stroke="white" stroke-width="4"/>
+  
+  <!-- Ondas de control -->
+  <g fill="none" stroke="#8e44ad" stroke-width="2">
+    <path d="M70,100 A30,30 0 0,1 130,100"/>
+    <path d="M60,100 A40,40 0 0,1 140,100"/>
+    <path d="M50,100 A50,50 0 0,1 150,100"/>
+  </g>
+</svg>

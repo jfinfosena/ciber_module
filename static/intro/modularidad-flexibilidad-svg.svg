@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fondo circular -->
+  <circle cx="100" cy="100" r="98" fill="#f0f0f0"/>
+  
+  <!-- Anillo exterior (flexibilidad) -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#9b59b6" stroke-width="8" stroke-dasharray="20 10"/>
+  
+  <!-- Módulos circulares -->
+  <circle cx="100" cy="45" r="25" fill="#4a90e2"/>
+  <circle cx="155" cy="100" r="25" fill="#ff6b6b"/>
+  <circle cx="100" cy="155" r="25" fill="#feca57"/>
+  <circle cx="45" cy="100" r="25" fill="#2ecc71"/>
+  
+  <!-- Conectores flexibles -->
+  <path d="M100 70 A30,30 0 0,1 130,100" stroke="#9b59b6" stroke-width="4" fill="none"/>
+  <path d="M130 100 A30,30 0 0,1 100,130" stroke="#9b59b6" stroke-width="4" fill="none"/>
+  <path d="M100 130 A30,30 0 0,1 70,100" stroke="#9b59b6" stroke-width="4" fill="none"/>
+  <path d="M70 100 A30,30 0 0,1 100,70" stroke="#9b59b6" stroke-width="4" fill="none"/>
+  
+  <!-- Centro (representa la unidad) -->
+  <circle cx="100" cy="100" r="15" fill="#34495e"/>
+</svg>

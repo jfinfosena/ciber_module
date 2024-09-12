@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fondo circular -->
+  <circle cx="100" cy="100" r="98" fill="#f0f0f0"/>
+  
+  <!-- Círculo central (núcleo del software) -->
+  <circle cx="100" cy="100" r="60" fill="#3498db" opacity="0.2"/>
+  
+  <!-- Símbolos de las fases del desarrollo -->
+  <g transform="translate(100 100)">
+    <!-- Planificación -->
+    <path d="M-40,-40 L-30,-40 L-30,-30 L-40,-30 Z M-35,-45 L-25,-45 L-25,-25 L-45,-25 L-45,-35 Z" fill="#34495e"/>
+    
+    <!-- Diseño -->
+    <path d="M20,-45 L40,-45 L30,-25 Z M25,-40 L35,-40 L30,-30 Z" fill="#2ecc71"/>
+    
+    <!-- Desarrollo -->
+    <text x="30" y="0" font-family="monospace" font-size="24" fill="#e74c3c">{}</text>
+    
+    <!-- Pruebas -->
+    <path d="M-40,25 L-30,25 M-35,30 L-35,40 M-40,35 L-30,35" stroke="#f39c12" stroke-width="3"/>
+    
+    <!-- Despliegue -->
+    <path d="M20,25 L40,35 L20,45 Z" fill="#8e44ad"/>
+  </g>
+  
+  <!-- Flechas de ciclo -->
+  <g fill="none" stroke="#7f8c8d" stroke-width="2">
+    <path d="M100,40 A60,60 0 0,1 154,70"/>
+    <path d="M160,100 A60,60 0 0,1 154,130"/>
+    <path d="M100,160 A60,60 0 0,1 46,130"/>
+    <path d="M40,100 A60,60 0 0,1 46,70"/>
+  </g>
+  
+  <!-- Puntas de flecha -->
+  <g fill="#7f8c8d">
+    <path d="M154,70 L158,60 L164,74"/>
+    <path d="M154,130 L164,126 L158,140"/>
+    <path d="M46,130 L42,140 L36,126"/>
+    <path d="M46,70 L36,74 L42,60"/>
+  </g>
+</svg>

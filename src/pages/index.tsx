@@ -15,12 +15,13 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
+        <p className="hero__subtitle">Crea, experimenta, innova: Tu viaje hacia la electrónica moderna empieza aquí.</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Documentación
           </Link>
         </div>
       </div>
