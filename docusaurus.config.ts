@@ -5,10 +5,11 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   markdown: {
     mermaid: true,
+    
   },
   themes: ['@docusaurus/theme-mermaid'],
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'MicroLab',
+  tagline: 'MicroLab',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -19,7 +20,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  // organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -30,7 +31,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['es-CO'],
   },
 
   presets: [
@@ -41,8 +42,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -52,8 +53,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -70,9 +71,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'MicroLab',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'MicroLab',
         src: 'img/logo.svg',
       },
       items: [
@@ -80,60 +81,60 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentación',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://github.com/facebook/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // links: [
+      //   {
+      //     title: 'Docs',
+      //     items: [
+      //       {
+      //         label: 'Tutorial',
+      //         to: '/docs/intro',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Community',
+      //     items: [
+      //       {
+      //         label: 'Stack Overflow',
+      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+      //       },
+      //       {
+      //         label: 'Discord',
+      //         href: 'https://discordapp.com/invite/docusaurus',
+      //       },
+      //       {
+      //         label: 'Twitter',
+      //         href: 'https://twitter.com/docusaurus',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'More',
+      //     items: [
+      //       {
+      //         label: 'Blog',
+      //         to: '/blog',
+      //       },
+      //       {
+      //         label: 'GitHub',
+      //         href: 'https://github.com/facebook/docusaurus',
+      //       },
+      //     ],
+      //   },
+      // ],
+      copyright: `Copyright © ${new Date().getFullYear()} SISEMB-TIC-Electrónica`,
     },
     prism: {
       theme: prismThemes.github,

@@ -1,47 +1,57 @@
 ---
 sidebar_position: 0
+title: "Introdución"
 ---
 
-# Tutorial Intro
+**Introducción**
 
-Let's discover **Docusaurus in less than 5 minutes**.
+En un mundo impulsado por la tecnología, la electrónica, los sistemas embebidos y el Internet de las Cosas (IoT) son campos en constante evolución. Para preparar a la próxima generación de ingenieros, diseñadores y desarrolladores, presentamos una plataforma de aprendizaje innovadora que democratiza el acceso a estas tecnologías.
 
-## Getting Started
+**¿Qué es nuestra plataforma?**
 
-Get started by **creating a new site**.
+Nuestra plataforma es un ecosistema completo de hardware y software que te permite aprender y experimentar con las tecnologías electrónicas más modernas de forma práctica e intuitiva.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+**Componentes clave:**
 
-### What you'll need
+* **Estructura Portátil:** Un bastidor de aluminio (60cm x 40cm x 40cm) robusto y portable, diseñado para albergar los módulos de forma organizada y segura.
+* **20 Módulos de Circuitos Impresos:**  Cubre una amplia gama de tecnologías:
+    * **Microcontroladores:** Arduino, STM32, ESP32, Raspberry Pi Pico, Microchip PIC.
+    * **Conectividad:**  ESP32 con WiFi y Bluetooth, XIAO-LoRa para comunicaciones de largo alcance, Raspberry Pi 4.
+    * **Interfaz:** Entradas digitales (pulsadores, teclados matriciales), displays LCD, pantallas OLED y TFT, Matrix LED.
+    * **Actuación:** Motores (pasos a paso, servos, brushless, motoreductores), Relés, Drives, RFID-RTC-uSD.
+    * **Sensores:** Diversos sensores para temperatura, humedad, presión, luz, distancia, etc. 
+    * **FPGA:**  Para diseño de circuitos digitales personalizados.
+* **Mini PC con Software Preinstalado:**  Un mini PC equipado con un IDE (Entorno de Desarrollo Integrado) compatible con las plataformas y lenguajes de programación más populares.
+* **Equipos de Medición:** Multímetro, osciloscopio y generador de señales para analizar circuitos y  depurar código.
+* **Página Web:**  Una plataforma online con documentación completa de cada módulo, incluyendo diagramas esquemáticos, conexiones, ejemplos de código y tutoriales.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+**Aplicaciones y Beneficios:**
 
-## Generate a new site
+* **Aprender Electrónica:**  Dominar los conceptos básicos de la electrónica, el funcionamiento de los componentes y las técnicas de montaje.
+* **Sistemas Embebidos:**  Diseño e implementación de sistemas con microcontroladores para aplicaciones específicas.
+* **Internet de las Cosas (IoT):**  Crear dispositivos inteligentes con conectividad a la red para controlar, automatizar y monitorear diferentes procesos.
+* **Inteligencia Artificial:**  Experimentación con algoritmos de IA en dispositivos embebidos para realizar tareas inteligentes.
+* **Microcontroladores:**  Programación de microcontroladores para controlar sistemas, robots, maquinaria, etc.
+* **Electrónica Digital:**  Diseño y análisis de circuitos digitales con lógica combinacional y secuencial.
+* **Desarrollo de Software:**  Crear aplicaciones para sistemas embebidos y dispositivos IoT.
 
-Generate a new Docusaurus site using the **classic template**.
+**Beneficios de nuestra plataforma:**
 
-The classic template will automatically be added to your project after you run the command:
+* **Aprendizaje Práctico:** Experimentación real con tecnología, consolidando los conocimientos.
+* **Modularidad:** Diseña y crea diferentes proyectos combinando los módulos de forma flexible.
+* **Software Completo:** Un IDE potente que facilita la programación en diversos lenguajes.
+* **Documentación Detallada:** Guías, diagramas y código para una experiencia de aprendizaje fluida.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+**Equipo del Proyecto:**
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+* **Líder del Proyecto:** [Nombre del líder]
+* **Desarrolladores de Hardware y Software:** [Nombres de los desarrolladores]
+    - **Jhon Fredy Valencia Gómez**: *Instructor TIC-Electrónica*
+    - **Hugo Alberto Santana Mazo**: *Instructor TIC-Electrónica*
+* **Ensamble y Montaje:** [Nombres de los encargados de montaje]
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+**Conclusión:**
 
-## Start your site
+Nuestra plataforma abre las puertas a un mundo de posibilidades en la electrónica moderna. Es una herramienta esencial para educadores, estudiantes, makers e investigadores que buscan aprender, experimentar y crear.
 
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+**¡Únete a la revolución electrónica!**
