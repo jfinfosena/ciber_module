@@ -1,0 +1,8 @@
+{
+  "label": "M02-ESP32",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "5 minutes to learn the most important Docusaurus concepts."
+  }
+}
