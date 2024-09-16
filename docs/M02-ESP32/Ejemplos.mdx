@@ -5,3 +5,30 @@ title: Ejemplos
 ---
 
 # Ejemplos
+
+
+```
+#define RGB_BRIGHTNESS 64  // Cambiar el brillo de blanco, maximo 255
+#define LED_RGB 8   // Pin del Led RGB en la tarjeta
+
+void setup() {
+  // No need to initialize the RGB LED
+}
+
+void loop() {
+  digitalWrite(LED_RGB, HIGH);  // Turn the RGB LED white
+  delay(1000);
+  digitalWrite(LED_RGB, LOW);  // Turn the RGB LED off
+  delay(1000);
+
+  neopixelWrite(LED_RGB, RGB_BRIGHTNESS, 0, 0);  // Rojo
+  delay(1000);
+  neopixelWrite(LED_RGB, 0, RGB_BRIGHTNESS, 0);  // Verde
+  delay(1000);
+  neopixelWrite(LED_RGB, 0, 0, RGB_BRIGHTNESS);  // Azul
+  delay(1000);
+  
+  neopixelWrite(LED_RGB, 0, 0, 0);  // Apagado / Negro
+  delay(1000); 
+}
+```
