@@ -5,3 +5,32 @@ title: Ejemplos
 ---
 
 # Ejemplos
+
+```
+
+#include <LiquidCrystal.h>
+
+int i;
+const int rs = A0, en = A1, d4 = A2, d5 = A3, d6 = A4, d7 = A5;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+
+void setup() {
+  lcd.begin(16, 2);
+  lcd.print("Microcontroladores");
+  lcd.setCursor(0, 1);
+}
+
+void loop() {
+//  lcd.scrollDisplayLeft();
+ // lcd.noDisplay();
+ // delay(150);
+ // lcd.display();
+// delay(150);
+  
+  lcd.setCursor(0, 1);
+  // print the number of seconds since reset:
+ 
+}
+
+```
