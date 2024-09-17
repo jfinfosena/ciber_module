@@ -3,7 +3,15 @@ sidebar_position: 0
 title: "Introdución"
 ---
 
-**Introducción**
+<img 
+  src="/intro/modulo.gif" 
+  alt="Docusaurus logo" 
+  style={{
+    width: '600px',
+    height: 'auto',
+    borderRadius: '10px'
+  }}
+/>
 
 En un mundo impulsado por la tecnología, la electrónica, los sistemas embebidos y el Internet de las Cosas (IoT) son campos en constante evolución. Para preparar a la próxima generación de ingenieros, diseñadores y desarrolladores, presentamos una plataforma de aprendizaje innovadora que democratiza el acceso a estas tecnologías.
 
