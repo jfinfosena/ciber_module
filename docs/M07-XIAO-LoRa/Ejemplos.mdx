@@ -5,3 +5,162 @@ title: Ejemplos
 ---
 
 # Ejemplos
+
+
+<img 
+  src="https://files.seeedstudio.com/wiki/XIAO_WiFi/connect-led-2.png" 
+  alt="Docusaurus logo" 
+  style={{
+    width: '400px',
+    height: 'auto',
+    borderRadius: '10px'
+  }}
+/>
+
+```cpp
+// define led according to pin diagram in article
+const int led = D10; // there is no LED_BUILTIN available for the XIAO ESP32C3.
+
+void setup() {
+  // initialize digital pin led as an output
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(led, HIGH);   // turn the LED on 
+  delay(1000);               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off
+  delay(1000);               // wait for a second
+}
+
+```
+
+Digital Input and Output
+Use pin 6 as the digital pin:
+```cpp
+const int buttonPin = 6;     // the number of the pushbutton pin
+const int ledPin =  13;      // the number of the LED pin
+
+int buttonState = 0;         // variable for reading the pushbutton status
+
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  } else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+  }
+}
+
+```
+
+AnalogRead
+Use pin 6 as the analog pin:
+```cpp
+
+
+void setup() {
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+  // turn the ledPin off:
+  digitalWrite(ledPin, LOW);
+  // stop the program for for <sensorValue> milliseconds:
+  delay(sensorValue);
+}
+
+```
+
+Serial
+Use pin 6 as the TX pin of UART(RX pin of UART is pin 7):
+```cpp
+
+void setup() {
+    Serial1.begin(115200);
+    while (!Serial);
+}
+
+void loop() {
+    Serial1.println("Hello,World");
+    delay(1000);
+}
+
+```
+
+I2C
+Use pin 5 as the SCL pin of IIC(SDA pin of IIC is pin 4):
+```cpp
+// Wire Master Writer
+// by Nicholas Zambetti <http://www.zambetti.com>
+
+// Demonstrates use of the Wire library
+// Writes data to an I2C/TWI slave device
+// Refer to the "Wire Slave Receiver" example for use with this
+
+// Created 29 March 2006
+
+// This example code is in the public domain.
+
+
+#include <Wire.h>
+
+void setup()
+{
+  Wire.begin(); // join i2c bus (address optional for master)
+}
+
+byte x = 0;
+
+void loop()
+{
+  Wire.beginTransmission(4); // transmit to device #4
+  Wire.write("x is ");        // sends five bytes
+  Wire.write(x);              // sends one byte  
+  Wire.endTransmission();    // stop transmitting
+  x++;
+  delay(500);
+}
+```
+
+SPI
+Use pin 8 as the SCK pin of SPI(MISO pin of SPI is pin 9,MOSI pin of SPI is pin 10):
+```cpp
+#include <SPI.h>
+const int CS = 7;
+void setup (void) {
+   digitalWrite(CS, HIGH); // disable Slave Select
+   SPI.begin ();
+   SPI.setClockDivider(SPI_CLOCK_DIV8);//divide the clock by 8
+}
+
+void loop (void) {
+   char c;
+   digitalWrite(CS, LOW); // enable Slave Select
+   // send test string
+   for (const char * p = "Hello, world!\r" ; c = *p; p++) {
+      SPI.transfer (c);
+   }
+   digitalWrite(CS, HIGH); // disable Slave Select
+   delay(2000);
+}
+```
